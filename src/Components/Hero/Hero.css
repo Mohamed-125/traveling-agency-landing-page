@@ -20,6 +20,10 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .hero__text_input_contener h3 {
   font-size: clamp(35px, 5vw, 60px);
