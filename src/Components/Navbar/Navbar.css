@@ -1,0 +1,165 @@
+.nav {
+  max-width: 1300px;
+  margin-inline: auto;
+  background-color: transparent;
+  color: white;
+
+  z-index: 100;
+}
+
+.nav__contener {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav__logo_div {
+  position: relative;
+  z-index: 100;
+}
+.nav__logo_div p {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.nav__links_div a {
+  color: white;
+
+  margin-inline: 1rem;
+  transition: 0.3s ease;
+  position: relative;
+  font-size: large;
+  padding-bottom: 0.5rem;
+}
+.nav__links_div {
+  position: relative;
+  top: 0.25rem;
+}
+
+.nav__icons__div {
+  position: relative;
+  display: none;
+  z-index: 10;
+}
+
+.nav__mobile_links_div {
+  z-index: 1;
+  font-size: 25px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 250px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #000;
+}
+.nav__mobile_links_div a:nth-child(1) {
+  margin-top: 5rem;
+}
+.nav__mobile_links_div a {
+  color: rgb(0, 0, 0);
+}
+
+.nav__mobile_search_icons_account_div {
+  position: absolute;
+  bottom: -30rem;
+  z-index: 100;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.nav__mobile_search_icons_account_div button {
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    rgb(124, 124, 221),
+    rgb(61, 61, 189)
+  );
+  border-radius: 5px;
+  border: none;
+  padding-block: 1rem;
+  margin-block: 0.2rem;
+}
+
+.nav__desktop_icons {
+  display: flex;
+  gap: 3rem;
+  font-size: 26px;
+}
+.nav__mobile_icons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 1rem;
+  color: #000;
+  font-size: 20px;
+}
+
+.nav__mobile_links_contener {
+  display: flex;
+}
+@media (max-width: 866px) {
+  .nav__contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__links_div a {
+    cursor: pointer;
+
+    margin-inline: 0.5rem;
+    transition: 0.3s ease;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  .nav__desktop_icons {
+    display: flex;
+    gap: 2rem;
+    font-size: 26px;
+  }
+}
+@media (max-width: 786px) {
+  .nav__icons__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__desktop_icons {
+    display: none;
+  }
+  .nav__links_div {
+    display: none;
+  }
+  .nav__mobile_links_contener {
+    gap: 1.5rem;
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media (max-width: 672px) {
+  .section__padding {
+    padding: 1rem 2rem;
+  }
+  .nav__mobile_links_div a:nth-child(1) {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .section__padding {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 670px) {
+  .nav__mobile_search_icons_account_div {
+    width: 82.5%;
+  }
+}

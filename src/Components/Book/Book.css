@@ -1,0 +1,136 @@
+.book__section {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.book__grid_div {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: "content content content  content content content content book book book";
+}
+.book__text_cards_div {
+  grid-area: content;
+}
+
+.book__book {
+  grid-area: book;
+  position: relative;
+  bottom: 1rem;
+}
+.book__cards {
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px;
+  width: fit-content;
+  text-align: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.book__cards .book__card {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  position: relative;
+  max-width: 350px;
+}
+.book__cards_icons {
+  border-radius: 5px;
+  box-sizing: content-box;
+  background-image: linear-gradient(
+    to left,
+    rgb(124, 124, 221),
+    rgb(61, 61, 189)
+  );
+  color: white;
+  font-size: 50px;
+  padding: 0.5rem 1rem;
+}
+
+.book__text {
+  text-align: center;
+  position: relative;
+  bottom: 0.8rem;
+}
+.book__text p {
+  margin-top: 0.5rem;
+  font-size: clamp(18px, 5vw, 19px);
+  font-weight: 600;
+}
+
+.book__input label {
+  margin-block: 0.5rem;
+  font-weight: 600;
+}
+.book__input input {
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.568);
+  padding: 0.3rem 1rem;
+  width: 200px;
+}
+
+@media (max-width: 1160px) and (min-width: 957px) {
+  .book__text_cards_div {
+    width: 95%;
+  }
+  .book__button {
+    font-size: 13px;
+    padding: 0.7rem 3rem;
+  }
+}
+
+@media (min-width: 941px) and (max-width: 956px) {
+  .book__button {
+    font-size: 13px;
+    padding: 0.7rem 2rem;
+  }
+  .book__text_cards_div {
+    width: 92%;
+  }
+}
+@media (max-width: 940px) {
+  .book__grid_div {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .book__book {
+    align-items: flex-start;
+  }
+
+  .book__text {
+    width: 100%;
+    text-align: center;
+  }
+  .book__input {
+    width: 100%;
+  }
+  .book__input input {
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.568);
+    padding: 0.3rem 1rem;
+    width: 100%;
+  }
+  .book__text p {
+    margin-top: 0.8rem;
+    font-size: clamp(18px, 5vw, 19px);
+    font-weight: 600;
+  }
+  .book__input label {
+    margin-block: 1rem;
+    font-weight: 600;
+  }
+  .book__book {
+    grid-area: book;
+    position: relative;
+    bottom: -1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .book__cards {
+    flex-wrap: wrap;
+  }
+}

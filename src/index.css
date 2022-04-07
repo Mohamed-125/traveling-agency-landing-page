@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+label {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+}
+
+.flex__coulmn {
+  display: flex;
+  flex-direction: column;
+}
+.flex__space_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__padding {
+  padding: 2rem 4rem;
+}
+
+.custom__button {
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  display: block;
+  font-size: 16px;
+  padding: 0.6rem 3.2rem;
+  background-color: rgba(0, 0, 0, 0.918);
+  color: white;
+  border: none;
+}
+
+@media (max-width: 940px) {
+  .custom__button {
+    width: 100%;
+    padding: 0.8rem 3.2rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__padding {
+    padding: 4rem 4rem;
+  }
+}
+@media (max-width: 350px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+}

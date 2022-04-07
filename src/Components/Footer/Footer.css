@@ -1,0 +1,23 @@
+.footer__section {
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.footer__section a {
+  color: black;
+  margin-inline: 1rem;
+}
+.footer__section p {
+  color: black;
+  margin-inline: 1rem;
+}
+
+.footer__icons * {
+  margin-inline: 1rem;
+}
+
+.footer__contener {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

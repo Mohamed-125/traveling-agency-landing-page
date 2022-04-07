@@ -1,0 +1,25 @@
+.imgesSlider__section {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.imgesSlider__contener {
+  width: 900px;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.imgesSlider__contener img {
+  object-fit: cover;
+  position: relative;
+  height: 750px;
+  width: 900px;
+}
+
+.imageSlider__img {
+  transition: 0.3s ease;
+}
+
+.imageSlider__imgs_contener {
+  transition: 0.5s all;
+  display: flex;
+}
