@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ImagesSlider.css";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 const ImagesSlider = () => {
   const [index, setIndex] = useState(0);
   const [operation, setOperation] = useState("");
@@ -65,12 +66,8 @@ const ImagesSlider = () => {
             justifyContent: "space-between",
           }}
         >
-          <button id="next" onClick={nextOrPre} className="imgesSlider__button">
-            next
-          </button>
-          <button id="prev" onClick={nextOrPre} className="imgesSlider__button">
-            pre
-          </button>
+          <AiOutlineArrowLeft onClick={nextOrPre} id="prev" />
+          <AiOutlineArrowRight onClick={nextOrPre} id="next" />
         </div>
         <div className="imageSlider__imgs_contener">
           {images.map((img, index) => {

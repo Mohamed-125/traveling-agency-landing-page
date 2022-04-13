@@ -23,3 +23,13 @@
   transition: 0.5s all;
   display: flex;
 }
+
+#next,
+#prev {
+  font-size: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  color: white;
+  box-sizing: content-box;
+  padding: 0.1rem 0.5rem;
+}

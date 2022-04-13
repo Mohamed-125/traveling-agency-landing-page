@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/traveling-agency-landing-page/static/css/main.e32cee13.css",
+    "main.css": "/traveling-agency-landing-page/static/css/main.be0b1883.css",
     "main.js": "/traveling-agency-landing-page/static/js/main.84e95b5d.js",
     "static/media/beachVid.mp4": "/traveling-agency-landing-page/static/media/beachVid.aaafa1c17fc79e9a6d45.mp4",
     "index.html": "/traveling-agency-landing-page/index.html",
-    "main.e32cee13.css.map": "/traveling-agency-landing-page/static/css/main.e32cee13.css.map",
+    "main.be0b1883.css.map": "/traveling-agency-landing-page/static/css/main.be0b1883.css.map",
     "main.84e95b5d.js.map": "/traveling-agency-landing-page/static/js/main.84e95b5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e32cee13.css",
+    "static/css/main.be0b1883.css",
     "static/js/main.84e95b5d.js"
   ]
 }
